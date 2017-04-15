@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+h1,h2,h3,h4,h5,h6,p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  line-height: initial;
+}
 body {
   background: #e9eef2;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .main-color {
-  color:  rgba(20,220,227,1)!important;
+  color:  #26dccc!important;
 }
 .tile.main-body {
   margin-top: 20px;
@@ -132,20 +139,43 @@ ul,li,a {
 .weather__info {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.weather__info>div {
 }
 .weather__info>.date {
   text-align: right;
   text-transform: uppercase;
+  color: #b3b3b3;
+}
+.weather__info>.date>h3 {
+  font-size: 39px;
+}
+.weather__info>.date>h4 {
+  font-size: 20px;
+  letter-spacing: 4px;
 }
 .weather__info>div {
   flex-grow:1;
 }
 .weather__info>.cel-degree {
+  position: relative;
+}
+.weather__info>.cel-degree>p {
+  position: relative;
+  font-weight: 800;
+  font-family: Roboto;
+  font-size: 67px;
+  color: #32c8d9;
 }
 
 .weather__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid black;
+  border-left: 2px solid rgba(212, 212, 212, 0.47);
+}
+.weather__icon i {
+  font-size: 40px;
+  color: #32c8d9;
 }
