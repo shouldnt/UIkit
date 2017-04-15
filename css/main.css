@@ -1,0 +1,151 @@
+body {
+  background: #e9eef2;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.main-color {
+  color:  rgba(20,220,227,1)!important;
+}
+.tile.main-body {
+  margin-top: 20px;
+}
+.main-border-radius {
+  border-radius: 5px;
+}
+.tile.is-child {
+  border-radius: 5px;
+}
+ul,li,a {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.wrap {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  margin: 0;
+}
+.main-nav>li {
+  flex-grow: 1;
+  text-align: center;
+}
+.main-nav>li>a {
+  display: block;
+  padding: 15px 20px;
+}
+.main-nav a {
+  color: #777777;
+}
+.main-nav>li>a>i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.sub-nav-1 {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.border-top {
+  padding-top: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(20,250,185,1) 0%, rgba(80,148,250,1) 100%);
+}
+.border-top>div,.border-top>nav>ul {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.shadow {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+#profile {
+  display: flex;
+  border-radius: 5px;
+  background: white;
+}
+#profile .detail {
+  
+  flex-grow: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#profile .detail>div {
+  padding: 10px;
+}
+.side-icon>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.side-icon>ul {
+  background:linear-gradient(to bottom, rgba(20,250,185,1) 0%, rgba(80,148,250,1) 100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.side-icon>ul>li {
+  width: 100%;
+  position: relative;
+}
+.side-icon>ul>li.ui-tabs-active:before {
+  position: absolute;
+  content: '';
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.side-icon>ul>li>a {
+  display: block;
+  padding: 20px 15px;
+  line-height: initial;
+  text-align: center;
+}
+.side-icon>ul>li>a:focus {
+  outline: none;
+}
+.side-icon>ul>li>a>i {
+  color: rgba(255,255,255,.95);
+  font-size: 17px;
+}
+
+/*===== weather =====*/
+#weather {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#weather>div {
+  flex-grow: 1;
+  align-self: stretch;
+}
+.weather__info {
+  display: flex;
+  align-items: center;
+}
+.weather__info>.date {
+  text-align: right;
+  text-transform: uppercase;
+}
+.weather__info>div {
+  flex-grow:1;
+}
+.weather__info>.cel-degree {
+}
+
+.weather__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+}

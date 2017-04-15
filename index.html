@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="border-top shadow">
+		    <nav>
+		      <ul class="main-nav">
+		        <li><a href="#">Dashboard <i class="fa fa-dashboard main-color"></i></a></li>
+		        <li><a href="#">Setting <i class="fa fa-sliders main-color"></i></a></li>
+		        <li><a href="#">Calendar <i class="fa fa-calendar-o main-color"></i></a></li>
+		        <li><a href="#">Message <i class="fa fa-comments-o main-color"></i></a></li>
+		        <li>
+		          <ul class="sub-nav-1">
+		            <li><a href="#" class="main-color">Fabric <i class="fa fa-angle-down main-color"></i></a></li>
+		            <li><a href="#">icon</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </nav>
+	  	</div>
+	</div>
+
+	<div class="container">
+		<div class="tile is-ancestor main-body">
+			<div class="tile is-parent is-vertical is-4">
+				<div id="profile" class="tile is-child shadow">
+			        <div class="side-icon">
+			            <ul>
+			              <li><a href="#tab_1"><i class="fa fa-bell-o"></i></a></li>
+			              <li><a href="#tab_2"><i class="fa fa-user-circle-o"></i></a></li>
+			              <li><a href="#tab_3"><i class="fa fa-camera-retro"></i></a></li>
+			              <li><a href="#tab_4"><i class="fa fa-heart-o"></i></a></li>
+			              <li><a href="#tab_5"><i class="fa fa-map-marker"></i></a></li>
+			            </ul>
+			      	</div>
+			        <div class="detail">
+			          <div id="tab_1">a</div>
+			          <div id="tab_2">b</div>
+			          <div id="tab_3">c</div>
+			          <div id="tab_4">d</div>
+			          <div id="tab_5">e</div>
+			        </div>
+			    </div>
+				<div class="tile is-child shadow main-border-radius" id="weather">
+					<div class="weather__info">
+						<div class="date">
+							<h3>Sun</h3>
+							<h4>15/04</h4>
+						</div>
+						<div class="cel-degree">
+							<p>5&deg;</p>
+						</div>
+					</div>
+					<div class="weather__icon">
+						<div>icon</div>
+					</div>
+				</div>
+			</div>
+			<div class="tile is-parent is-4">
+				<div id="analytics" class="tile is-child shadow main-border-radius">
+				</div>
+			</div>
+			<div class="tile is-parent is-vertical">
+				<div class="tile is-child">
+					<div id="indicator" class="shadow main-border-radius">
+						<h3>Indicator</h3>
+					</div>
+				</div>
+				<div class="tile is-child">
+					column3 2
+				</div>
+			</div>
+		</div>
+		
+	    
+	</div>
+	
+	<div class="script">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			$('#profile').tabs();
+		</script>
+	</div>
+</body>
+</html>
